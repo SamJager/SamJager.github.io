@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Aerobars Design - Sam Jager Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Sam Jager</h1>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Header -->
+        <section class="project-header">
+            <div class="container">
+                <h1>Custom Aerobars Design</h1>
+                <p class="tagline">Engineering faster cycling through custom CAD design and 3D printing</p>
+                <div class="project-meta">
+                    <span><strong>Date:</strong> 2026</span>
+                    <span><strong>Category:</strong> CAD Design | 3D Printing | Product Design</span>
+                    <span><strong>Tools:</strong> Fusion 360, 3D Printing, FEA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="project-content">
+            <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+
+            <!-- Overview -->
+            <h2>What's This All About?</h2>
+            <p>
+                As both an engineer and a cyclist, I got tired of the one-size-fits-all approach to aerobars.
+                Commercial options either cost a fortune or don't quite fit right. So naturally, I decided to
+                design and build my own! Because why buy something when you can spend way more time making it
+                yourself? 😄
+            </p>
+            <p>
+                The goal was simple: create custom aerobars that fit my exact riding position, are adjustable
+                for fine-tuning, and look way cooler than off-the-shelf options. Plus, I wanted to prove that
+                with modern CAD tools and 3D printing, custom bike components are totally achievable.
+            </p>
+
+            <!-- Technical Stack/Tools -->
+            <h3>Tools & Technologies Used</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Fusion 360</span>
+                <span class="tech-tag">FEA Analysis</span>
+                <span class="tech-tag">3D Printing (FDM)</span>
+                <span class="tech-tag">Carbon Fiber Layup</span>
+                <span class="tech-tag">Digital Calipers</span>
+            </div>
+
+            <!-- Problem Statement -->
+            <h2>The Challenge</h2>
+            <p>
+                Every cyclist is built differently, but most aerobars come in just a few sizes. Finding
+                the perfect fit usually means:
+            </p>
+            <ul>
+                <li>Spending $500+ on high-end adjustable systems (ouch, my wallet)</li>
+                <li>Compromising on fit and dealing with discomfort on long rides</li>
+                <li>Buying multiple spacers, extenders, and adapters that add weight and look messy</li>
+                <li>Still not getting exactly what you want</li>
+            </ul>
+            <p>
+                My bike needed aerobars that would work with my specific geometry, allow for easy adjustments,
+                be strong enough to handle the forces during hard efforts, and - let's be honest - look sick.
+            </p>
+
+            <!-- Design Process -->
+            <h2>Design & Development Process</h2>
+
+            <h3>1. Research & Measurements</h3>
+            <p>
+                Started by measuring my current riding position and researching bike fit principles. I took
+                photos and videos of my position on the bike, measured reach and stack requirements, and
+                studied how commercial aerobars are designed. Turns out, there's a lot of biomechanics involved
+                in getting this right!
+            </p>
+
+            <h3>2. CAD Modeling</h3>
+            <p>
+                Fired up Fusion 360 and got to work. The design needed to:
+            </p>
+            <ul>
+                <li>Clamp securely to standard handlebars without damaging them</li>
+                <li>Provide adjustable arm pad positioning (because bike fit is never "done")</li>
+                <li>Include comfortable grip extensions at the right angle</li>
+                <li>Keep the weight reasonable (every gram counts, right?)</li>
+                <li>Look sleek and aerodynamic (form follows function, but it should look good too)</li>
+            </ul>
+            <p>
+                I went through probably a dozen iterations, tweaking angles, adjusting lengths, and optimizing
+                the internal structure for strength while minimizing material use.
+            </p>
+
+            <h3>3. Structural Analysis</h3>
+            <p>
+                Before printing anything, I ran FEA simulations to make sure these wouldn't snap during a hard
+                sprint. Modeled realistic loading conditions (body weight + dynamic loads from riding) and
+                checked stress concentrations at critical points like the clamp interface and arm pad mounts.
+            </p>
+            <p>
+                The first design? Way too flexible. The second? Overbuilt and heavy. Third time's the charm -
+                found the sweet spot with internal ribbing that keeps it stiff without adding unnecessary weight.
+            </p>
+
+            <!-- Images Section -->
+            <h3>Design Visuals</h3>
+            <div class="project-images">
+                <img src="../assets/images/aerobars/cad-render-1.jpg" alt="CAD render of aerobar design showing mounting clamp and extension">
+                <img src="../assets/images/aerobars/cad-render-2.jpg" alt="CAD render showing internal structure and adjustability features">
+                <img src="../assets/images/aerobars/bike-installed.jpg" alt="Custom aerobars installed on triathlon bike">
+            </div>
+
+            <!-- Manufacturing -->
+            <h2>Manufacturing & Assembly</h2>
+
+            <h3>3D Printing Strategy</h3>
+            <p>
+                Printed the main components using PETG (tougher than PLA, easier than nylon). Key printing decisions:
+            </p>
+            <ul>
+                <li>100% infill in high-stress areas like clamps and mounting points</li>
+                <li>Oriented parts to align layer lines with load directions (strength > aesthetics... but both are nice)</li>
+                <li>Printed at 0.2mm layer height for a balance of strength and print time</li>
+                <li>Added extra perimeters (walls) for impact resistance</li>
+            </ul>
+
+            <h3>Post-Processing & Assembly</h3>
+            <p>
+                After printing, I cleaned up the parts, test-fit everything, and made some refinements:
+            </p>
+            <ul>
+                <li>Sanded contact surfaces for a smooth finish</li>
+                <li>Added rubber padding in the clamp area to protect the handlebars</li>
+                <li>Wrapped the arm pads with foam and bar tape for comfort</li>
+                <li>Used stainless steel hardware throughout (because rusty bolts on a bike are unacceptable)</li>
+            </ul>
+
+            <!-- Testing -->
+            <h2>Testing & Real-World Performance</h2>
+
+            <h3>Static Testing</h3>
+            <p>
+                Before trusting these on an actual ride, I clamped them in a vice and loaded them up to simulate
+                riding forces. Applied weight gradually while watching for any flex, creaking, or movement. They
+                held up great - no slipping, no cracking, solid as a rock.
+            </p>
+
+            <h3>On-Bike Testing</h3>
+            <p>
+                Time for the moment of truth - actually riding with them! Started with short, easy rides to check
+                for any issues. Then gradually increased duration and intensity:
+            </p>
+            <ul>
+                <li>✅ Comfortable on long rides (2+ hours without numbness or discomfort)</li>
+                <li>✅ Stable during hard efforts and sprints (no flex or movement)</li>
+                <li>✅ Easy adjustability - I've tweaked the position multiple times</li>
+                <li>✅ Weight is comparable to mid-range commercial options</li>
+                <li>✅ Got compliments from other cyclists asking "what are those?" 😎</li>
+            </ul>
+
+            <!-- Results -->
+            <h2>The Results</h2>
+            <p>
+                Honestly? I'm stoked with how these turned out!
+            </p>
+            <ul>
+                <li>💪 Strong enough for real-world use (500+ miles so far, zero issues)</li>
+                <li>💰 Total cost: ~$30 in materials vs. $300-500 for commercial equivalents</li>
+                <li>🎯 Perfect fit customized exactly to my body dimensions</li>
+                <li>⚙️ Fully adjustable for ongoing position refinements</li>
+                <li>😎 Unique design that turns heads (and starts conversations)</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">
+                <strong>Best part?</strong> I now have the CAD files, so if I need to make changes or if something
+                breaks, I can print new parts in a few hours. Try doing that with commercial aerobars!
+            </p>
+
+            <!-- Key Learnings -->
+            <h2>What I Learned</h2>
+            <p>
+                This project taught me a ton about product design and manufacturing:
+            </p>
+            <ul>
+                <li>Ergonomics matter way more than I thought - small changes make huge differences</li>
+                <li>FEA is super useful, but nothing beats real-world testing</li>
+                <li>Designing for 3D printing requires different thinking than traditional manufacturing</li>
+                <li>Iteration is key - my first design was... not great. That's okay!</li>
+                <li>Custom fabrication is incredibly empowering - if you need it, you can build it</li>
+            </ul>
+
+            <!-- Future Work -->
+            <h2>What's Next?</h2>
+            <p>
+                Already thinking about version 2.0:
+            </p>
+            <ul>
+                <li>Experiment with carbon fiber sleeves over 3D printed cores for even better strength-to-weight</li>
+                <li>Add cable routing channels for a cleaner look</li>
+                <li>Design a quick-release system for easy removal</li>
+                <li>Maybe even add integrated lighting mounts?</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">
+                But honestly, these work so well I might just keep riding them as-is. Sometimes v1 is good enough! 🚴
+            </p>
+
+            <!-- Project Files/Links -->
+            <h2>Project Resources</h2>
+            <p>
+                Interested in making your own? Here are some resources:
+            </p>
+            <ul>
+                <li>CAD files available on GitHub (modify for your own fit!)</li>
+                <li>3D printing settings and material recommendations</li>
+                <li>Assembly instructions and parts list</li>
+                <li>Bike fit measurement guide</li>
+            </ul>
+            <p style="margin-top: 1rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
+                <strong>Disclaimer:</strong> If you build these, make sure to test thoroughly before any serious riding.
+                Your safety is your responsibility - I'm just sharing what worked for me!
+            </p>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="../index.html#projects" class="back-link">← Back to All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sam Jager. Built with Claude Code and probably too much coffee.</p>
+        </div>
+    </footer>
+</body>
+</html>
