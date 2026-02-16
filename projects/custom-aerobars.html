@@ -27,9 +27,9 @@
                 <h1>Custom Aerobars Design</h1>
                 <p class="tagline">Engineering faster cycling through custom CAD design and 3D printing</p>
                 <div class="project-meta">
-                    <span><strong>Date:</strong> 2026</span>
-                    <span><strong>Category:</strong> CAD Design | 3D Printing | Product Design</span>
-                    <span><strong>Tools:</strong> Fusion 360, 3D Printing, FEA</span>
+                    <span><strong>Date:</strong> 2025</span>
+                    <span><strong>Category:</strong> CAD Design | 3D Printing | Machining</span>
+                    <span><strong>Tools:</strong> Onshape, FFF 3D Printing, Waterjet, Manual Machining</span>
                 </div>
             </div>
         </section>
@@ -42,9 +42,9 @@
             <h2>What's This All About?</h2>
             <p>
                 As both an engineer and a cyclist, I got tired of the one-size-fits-all approach to aerobars.
-                After looking at what the pros use - custom-fabricated aerobars perfectly tailored to their position -
-                I thought, why not make my own? With CAD skills, a 3D printer, and some aluminum stock, I could
-                replicate those high-end setups for a fraction of the cost.
+                Inspired by the one piece bars used by pro triathletes like Magnus Ditlev, I decided to make my own
+                as an engineer With CAD skills, a 3D printer, aluminum stock, and access to capable tools, I can
+                create a similar solution to those high-end setups for a fraction of the cost.
             </p>
             <p>
                 The goal: create aerobars that fit my exact riding position, look professional, and perform like
@@ -56,9 +56,8 @@
             <!-- Technical Stack/Tools -->
             <h3>Tools & Technologies Used</h3>
             <div class="tech-stack">
-                <span class="tech-tag">Fusion 360</span>
-                <span class="tech-tag">FEA Analysis</span>
-                <span class="tech-tag">3D Printing (PETG)</span>
+                <span class="tech-tag">Onshape</span>
+                <span class="tech-tag">3D Printing (ASA-CF)</span>
                 <span class="tech-tag">Aluminum Fabrication</span>
                 <span class="tech-tag">CNC/Manual Machining</span>
             </div>
@@ -78,8 +77,8 @@
                 <li>Perfectly match my riding position (no adjustability needed if it's designed right)</li>
                 <li>Support my entire forearms comfortably for long-distance riding</li>
                 <li>Mount cleanly to my stem for that integrated, pro look</li>
-                <li>Be strong enough to handle hard efforts without flexing</li>
-                <li>Look like they belong on the bike, not like an aftermarket add-on</li>
+                <li>Be strong enough to handle hard efforts and bumps with minimal flexing</li>
+                <li>Look like they belong on the bike, not like a homemade solution</li>
             </ul>
 
             <!-- Design Process -->
@@ -87,15 +86,14 @@
 
             <h3>1. Research & Position Mapping</h3>
             <p>
-                Started by studying how pro triathletes and time trialists set up their positions. Took detailed
-                measurements of my optimal aero position - reach, stack, elbow width, forearm angle. I spent
-                hours on the bike with tape and cardboard mockups to nail down exactly where my arms needed to be.
-                Let's just say there was a previous attempt that... didn't go great. Learned a lot from that one! 😅
+                As a starting point I look and level of polish to match. I also had a position I already found  
+                works for me through use of a basic set of aerobars, and a previous version that... didn't meet my 
+                standards 😅. But I learned a lot from it! 
             </p>
 
             <h3>2. CAD Modeling - The Hybrid Approach</h3>
             <p>
-                Fired up Fusion 360 and designed a hybrid system combining the best of both worlds:
+                Fired up Onshape and designed a hybrid system combining the best of both worlds:
             </p>
             <ul>
                 <li><strong>Aluminum frame:</strong> Main structure for strength and stiffness - this takes all the load</li>
@@ -103,24 +101,6 @@
                 <li><strong>3D printed forearm cups:</strong> Ergonomic supports molded exactly to my forearm shape for maximum comfort</li>
                 <li><strong>No adjustability:</strong> Everything dimensioned precisely for my position (if it's right the first time, you don't need to adjust)</li>
             </ul>
-            <p>
-                The design went through several iterations. Modeling the forearm cups to provide full support while
-                keeping weight down was tricky - had to balance comfort with minimal material. The stem mount needed
-                to be bomb-proof since that's the critical structural connection.
-            </p>
-
-            <h3>3. Structural Analysis</h3>
-            <p>
-                Before fabricating anything, I ran FEA simulations on the aluminum frame to verify it could handle
-                the loads. Modeled worst-case scenarios - full body weight on the forearms during a sprint, hitting
-                bumps, lateral forces from handling. The stem mount got extra attention since that's the single
-                point of attachment.
-            </p>
-            <p>
-                The beauty of using aluminum for the main structure is that I could design it thin and light while
-                still being incredibly stiff. The 3D printed cups don't carry structural loads - they're just there
-                for comfort and support.
-            </p>
 
             <!-- Images Section -->
             <h3>Design Visuals</h3>
@@ -135,29 +115,22 @@
 
             <h3>Aluminum Frame & Mount</h3>
             <p>
-                The aluminum components were fabricated from 6061-T6 aluminum stock. The main frame is simple
-                but effective - straight sections with carefully positioned bends to match my riding geometry.
-                The stem mount was the trickiest part - it replaces the standard stem clamp and had to fit
-                precisely while maintaining clamping force.
+                The aluminum structural components were fabricated from aluminum stock. The main frame is simple
+                but effective - the profile was cut on a waterjet and tapped holes added on a bridgeport.
+                The stem mount was a bit more difficult - it was also cut in profile on a waterjet, then some milling,
+                drilling, and counterboring made for a drop in replacement for the existing stem clamp.
             </p>
-            <ul>
-                <li>Cut and bent aluminum tubing to exact dimensions</li>
-                <li>Machined the stem mount interface for perfect fit</li>
-                <li>Deburred all edges (aluminum splinters are no joke)</li>
-                <li>Anodized black to match the bike aesthetic</li>
-            </ul>
 
             <h3>3D Printed Forearm Cups</h3>
             <p>
-                The forearm cups were 3D printed in PETG (durable and slightly flexible). These are shaped to
+                The forearm cups were 3D printed in ASA-CF for UV resistance and stiffness. These are shaped to
                 cradle my entire forearms, distributing pressure evenly instead of just having small pads like
                 traditional aerobars. Key printing decisions:
             </p>
             <ul>
                 <li>Printed at 0.2mm layer height for smooth surface finish</li>
-                <li>Used organic supports to maintain the complex curved geometry</li>
-                <li>40% infill was plenty - these don't carry structural loads</li>
-                <li>Post-processed with acetone vapor for a smoother finish</li>
+                <li>Split into 2 parts to fit on a Bambu X1 printer</li>
+                <li>just a few perimeters and low infill kept weight down, the shape makes it strong</li>
                 <li>Added foam padding on the inside for extra comfort</li>
             </ul>
 
@@ -167,8 +140,8 @@
             <h3>Static Testing</h3>
             <p>
                 Before trusting these on an actual ride, I loaded them up in a bench test to simulate riding forces.
-                Put my full body weight on the forearm cups, tested the stem mount under various loads, checked for
-                any flex or movement. The aluminum frame is rock solid - zero flex even under hard loads.
+                Put significantly more force than would rotate the bars on basic bar clamp aerobars and the bars felt
+                great. A bit of flex that absorbs some impact from bumps, but not enough that if feels concerning.
             </p>
 
             <h3>On-Bike Testing</h3>
@@ -184,47 +157,17 @@
                 <li>✅ Got compliments from other cyclists asking where I bought them 😎</li>
             </ul>
 
-            <!-- Results -->
-            <h2>The Results</h2>
-            <p>
-                Honestly? I'm stoked with how these turned out!
-            </p>
-            <ul>
-                <li>💪 Bomber construction - aluminum frame handles everything I can throw at it</li>
-                <li>💰 Total cost: ~$80 in materials vs. $1000+ for pro-level custom setups</li>
-                <li>🎯 Perfect fit because it was designed specifically for my body and riding style</li>
-                <li>😌 Full forearm support = no numbness or discomfort even on century rides</li>
-                <li>😎 Clean, integrated look that rivals professional custom builds</li>
-            </ul>
-            <p style="margin-top: 1.5rem;">
-                <strong>Best part?</strong> They're custom-tailored to me, which means they fit better than any
-                off-the-shelf option ever could. That's the power of designing and making your own gear!
-            </p>
-
-            <!-- Key Learnings -->
-            <h2>What I Learned</h2>
-            <p>
-                This project taught me a ton about product design and manufacturing:
-            </p>
-            <ul>
-                <li>Full forearm support is massively more comfortable than traditional arm pads</li>
-                <li>Getting the position right takes time and patience - mockups are your friend</li>
-                <li>Hybrid designs (metal + 3D printing) leverage the strengths of both materials</li>
-                <li>Sometimes the first version teaches you what NOT to do (that's valuable too!)</li>
-                <li>Custom fabrication lets you replicate pro-level equipment on a DIY budget</li>
-            </ul>
-
             <!-- Future Work -->
             <h2>What's Next?</h2>
             <p>
-                These work perfectly for me, but I'm already thinking about version 3.0 (yes, there was a v1
-                that shall not be spoken of 😅):
+                These work perfectly for me, but I'm already thinking about version 3.0 (as I mentioned 
+                there was a version 1 that shall not be mentioned further 😅):
             </p>
             <ul>
                 <li>Design an adjustable version that could work for different riders or positions</li>
                 <li>Make it easier to swap between different stem/bike setups</li>
-                <li>Integrate cable routing for electronic shifters</li>
-                <li>Maybe offer the design to other cyclists who want custom aerobars without the custom price</li>
+                <li>Try my hand at custom carbon fiber layup</li>
+                <li>Do the real engineering (quantify loads, FEA, Bench testing to failure)</li>
             </ul>
             <p style="margin-top: 1.5rem;">
                 The beauty of designing your own is that you can iterate forever. But for now, these do exactly
@@ -234,17 +177,7 @@
             <!-- Project Files/Links -->
             <h2>Project Resources</h2>
             <p>
-                Interested in making your own? Here are some resources:
-            </p>
-            <ul>
-                <li>CAD files available on GitHub (modify for your own fit!)</li>
-                <li>3D printing settings and material recommendations</li>
-                <li>Assembly instructions and parts list</li>
-                <li>Bike fit measurement guide</li>
-            </ul>
-            <p style="margin-top: 1rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px;">
-                <strong>Disclaimer:</strong> If you build these, make sure to test thoroughly before any serious riding.
-                Your safety is your responsibility - I'm just sharing what worked for me!
+                The full design was done in <a href="https://cad.onshape.com/documents/399947b55057a75ea656eeae/w/11ed2d4a08a38b42c4a46bf8/e/5de546f997656fb2596304aa?renderMode=0&uiState=69934b60fc2883c53e1c9351">Onshape</a>
             </p>
 
             <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
