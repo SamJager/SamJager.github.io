@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Temp, Large Format Custom 3D Printer - Sam Jager Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Sam Jager</h1>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Header -->
+        <section class="project-header">
+            <div class="container">
+                <h1>High Temp, Large Format Custom 3D Printer</h1>
+                <p class="tagline">Inspired by open source printers but finding them lacking, I decided to build my own.</p>
+                <div class="project-meta">
+                    <span><strong>Date:</strong> 2024–Present</span>
+                    <span><strong>Category:</strong> CAD Design / Fabrication / Software</span>
+                    <span><strong>Tools:</strong> Onshape, Waterjet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="project-content">
+            <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+
+            <!-- Overview -->
+            <h2>Project Overview</h2>
+            <p>
+                I have always loved FFF 3D printing since I first learned about it. Making complex three-dimensional
+                shapes with basic CAD skills and a machine that costs well under $1,000? What's not to love? Backed by
+                an incredible open source community, great software, and endless material options, it is an absolutely
+                incredible resource.
+            </p>
+            <p>
+                While I love the extensive existing 3D printer options (and they have improved greatly since I started
+                this project), they still leave me wanting more. The consumer 3D printer market is only now starting
+                to offer printers with chamber temperatures acceptable for printing basic materials like ABS and Nylon,
+                and no one even seems to be trying to reach true engineering materials outside of industrial printers.
+                Additionally, the anisotropy from poor layer adhesion could be mitigated by non-planar or 5-axis printing.
+            </p>
+            <p>
+                The plan I arrived at was to build a fully custom printer with a bomb-proof metal motion system capable
+                of handling true engineering materials should I choose to use a compatible extrusion system. I also
+                decided to use three independent ball screw-driven Z axes, creating 2-axis bed tilt capability for my
+                dreams of attempting 5-axis FFF printing. While I was at it, I might as well make it big—big printers
+                are fun, and 5-axis printing would greatly benefit from a larger platform.
+            </p>
+
+            <!-- Technical Stack/Tools -->
+            <h3>Tools & Technologies Used</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Onshape</span>
+                <span class="tech-tag">Waterjet</span>
+            </div>
+
+            <!-- Problem Statement -->
+            <h2>Problem Statement</h2>
+            <p>As I started this project, I quickly developed a list of requirements and desired features.</p>
+
+            <p><strong>Requirements:</strong></p>
+            <ul>
+                <li>All core motion system components capable of operating at &gt;100°C</li>
+                <li>Bomb-proof motion system allowing for future ambitious projects</li>
+                <li>Upgrade potential for 5-axis printing (2-axis bed tilt)</li>
+            </ul>
+
+            <p><strong>Desired Features:</strong></p>
+            <ul>
+                <li>Large format &gt;300mm in all axes</li>
+                <li>Multi-toolhead for support material and multi-material printing</li>
+                <li>High-speed printing</li>
+            </ul>
+
+            <!-- Design Process -->
+            <h2>Design & Development</h2>
+            <p>
+                Given the wide range of successful FFF printers out there, it would be foolish to start from scratch.
+                My inspiration began with the Voron Trident for its effective CoreXY motion system and three Z axes
+                enabling 2-axis bed tilt. I was also inspired by the E3D Toolchanger and Pantheon printers, which use
+                a large flat plate as a consistent XY motion plane. While I didn't want to develop my own toolchanger,
+                the Prusa XL inspired me to leave a large space at the back for docking toolheads.
+            </p>
+
+            <h3>Key Design Points</h3>
+
+            <!-- Design Point 1: T-Slot Frame -->
+            <div style="margin-bottom: 2.5rem;">
+                <h4>T-Slot Frame</h4>
+                <p>
+                    1/5" T-slot aluminum extrusion frame ensures rigidity while providing easy mounting locations for
+                    the high-temperature-rated insulation required to achieve the enclosure temperatures needed for
+                    true engineering materials.
+                </p>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-top: 1rem;">
+                    Image Placeholder — Frame Assembly
+                </div>
+            </div>
+
+            <!-- Design Point 2: XY Motion System -->
+            <div style="margin-bottom: 2.5rem;">
+                <h4>XY Motion System</h4>
+                <p>
+                    The XY motion system is built on a 1/2" MIC6 aluminum tooling plate, serving as a robust and flat
+                    platform. The X axis gantry was originally planned as a T-slot extrusion, but it didn't inspire
+                    confidence in rigidity, so I switched to a stacked plate construction.
+                </p>
+                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-top: 1rem;">
+                    Image Placeholder — XY Gantry / MIC6 Plate
+                </div>
+            </div>
+
+            <!-- Design Point 3: Triple Ball Screw Z Axis -->
+            <div style="margin-bottom: 2.5rem;">
+                <h4>Triple Ball Screw Z Axis</h4>
+                <p>
+                    Three independent ball screw-driven Z axes provide the platform for 2-axis bed tilt and are built
+                    for continuous bed motion, enabling future 5-axis printing capability.
+                </p>
+                <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-top: 1rem;">
+                    Image Placeholder — Z-Axis Assembly
+                </div>
+            </div>
+
+            <!-- Design Point 4: 400mm Bed -->
+            <div style="margin-bottom: 2.5rem;">
+                <h4>400mm MIC6 Bed</h4>
+                <p>
+                    A 400mm MIC6 aluminum tooling plate combined with a fiberglass build plate ensures flatness,
+                    minimizes warping when heated, and prevents the build plate peeling seen on large parts printed
+                    on magnetic build plates.
+                </p>
+                <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-top: 1rem;">
+                    Image Placeholder — Bed Assembly
+                </div>
+            </div>
+
+            <!-- In Progress / Future Work -->
+            <h2>In Progress / Future Work</h2>
+
+            <h3>In Progress</h3>
+            <ul>
+                <li>Fully enclosing and insulating the frame</li>
+                <li>Automatic mesh bed leveling</li>
+                <li>Bed and hotend cable chains / cable management</li>
+                <li>Control electronics cooling</li>
+            </ul>
+
+            <h3>Future</h3>
+            <ul>
+                <li>Chamber temperature control and active heating</li>
+                <li>Bed inverse kinematics for 2-axis tilt</li>
+                <li>Investigate using Bondtech INDX toolhead system</li>
+            </ul>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="../index.html#projects" class="back-link">← Back to All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sam Jager. Created in collaboration with <a href="https://claude.ai/code" style="color: var(--primary-color); text-decoration: none;">Claude Code</a> and probably too much coffee.</p>
+        </div>
+    </footer>
+</body>
+</html>
