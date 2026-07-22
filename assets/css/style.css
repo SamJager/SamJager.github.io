@@ -476,3 +476,221 @@ footer p {
     font-weight: 600;
     border: 1px solid var(--border-color);
 }
+
+/* Small Projects Grid */
+.small-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.small-project-card {
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.small-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--primary-color);
+}
+
+.small-project-thumb {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.small-project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-count-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(2, 6, 23, 0.75);
+    color: var(--text-dark);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.small-project-info {
+    padding: 1.25rem;
+}
+
+.small-project-info h3 {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.small-project-date {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.small-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.small-project-tags .tech-tag {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+}
+
+.small-project-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.small-projects-empty {
+    display: none;
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 65vh;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    object-fit: contain;
+}
+
+.lightbox-caption {
+    text-align: center;
+    color: var(--text-dark);
+    margin-top: 1rem;
+    max-width: 700px;
+}
+
+.lightbox-caption h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.lightbox-caption p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.lightbox-counter {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: var(--primary-color);
+    color: var(--bg-darker);
+    border-color: var(--primary-color);
+}
+
+.lightbox-close {
+    top: -10px;
+    right: -10px;
+}
+
+.lightbox-prev {
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .small-projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lightbox-close {
+        top: 0;
+        right: 0;
+    }
+
+    .lightbox-prev {
+        left: 0;
+    }
+
+    .lightbox-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .small-projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

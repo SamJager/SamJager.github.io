@@ -14,6 +14,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#small-projects">Small Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -88,6 +89,20 @@
             </div>
         </section>
 
+        <!-- Small Projects Section -->
+        <section id="small-projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Small Projects</h2>
+                <p style="text-align: center; color: var(--text-light); max-width: 700px; margin: -1.5rem auto 0;">
+                    Quicker builds and one-off experiments - click a photo for more.
+                </p>
+                <div class="small-projects-grid" id="small-projects-grid"></div>
+                <p class="small-projects-empty" id="small-projects-empty">
+                    More small projects coming soon!
+                </p>
+            </div>
+        </section>
+
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
@@ -140,10 +155,28 @@
         </section>
     </main>
 
+    <!-- Lightbox for Small Projects -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div class="lightbox-counter" id="lightbox-counter"></div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Sam Jager. Created in collaboration with <a href="https://claude.ai/code" style="color: var(--primary-color); text-decoration: none;">Claude Code</a> and probably too much coffee.</p>
         </div>
     </footer>
+
+    <script src="assets/js/small-projects-data.js"></script>
+    <script src="assets/js/small-projects.js"></script>
 </body>
 </html>
