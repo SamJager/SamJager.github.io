@@ -28,7 +28,7 @@ const SMALL_PROJECTS = [
     {
         slug: "moving-hex-arena",
         title: "Moving Hex Arena",
-        description: "A motorized hexagonal arena for behavioral studies.",
+        description: "A motorized hexagonal arena which allows for automated reconfiguration for mouse behavioral studies",
         images: [
             "assets/images/small-projects/Moving Hex Arena/1.png",
             "assets/images/small-projects/Moving Hex Arena/2.png",
@@ -41,7 +41,7 @@ const SMALL_PROJECTS = [
     {
         slug: "well-plate-robot",
         title: "Well Plate Robot",
-        description: "A robot for automated handling of well plates.",
+        description: "An automated system for cycling 56 well plates onto an imaging platform over a 24 hour period.",
         images: [
             "assets/images/small-projects/Well plate robot/1.png",
             "assets/images/small-projects/Well plate robot/2.png"
