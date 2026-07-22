@@ -25,5 +25,30 @@
  */
 
 const SMALL_PROJECTS = [
-    // Add new project objects here, newest first.
+{
+      slug: "Fly VR",
+      title: "Projected fly VR",
+      description: "These are a couple of projector based fly VR systems I built. Both had tight space constraints due to the microscope used to image the fly, resulting in different layouts to fit in the available space while maintaining usabiility.",
+      images: [
+          "assets/images/small-projects/Fly VR/1.jpg",
+          "assets/images/small-projects/Fly VR/2.jpg",
+          "assets/images/small-projects/Fly VR/3.jpg"
+      ],
+      
+      slug: "Rat Equip",
+      title: "To help a lab study how rats interact with each other in a social context, I built a revolving door and a seesaw. The door needed to lock and unlock, and the seesaw needed an adjustable weight bias towards one side. Both devices were designed to be autoclaved and have not pinch points when they move.",
+      description: "",
+      images: [
+          "assets/images/small-projects/Rat Equip/1.jpg",
+          "assets/images/small-projects/Rat Equip/2.jpg",
+          "assets/images/small-projects/Rat Equip/3.jpg"
+      ],
+      
+      slug: "Flyris",
+      title: "Motorized adjustable ",
+      description: "A motorized adjustable diameter arena for fly behavior",
+      images: [
+          "assets/images/small-projects/Flyris/1.jpg"
+      ],
+  }
 ];
