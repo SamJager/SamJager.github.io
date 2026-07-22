@@ -25,30 +25,57 @@
  */
 
 const SMALL_PROJECTS = [
-{
-      slug: "Fly VR",
-      title: "Projected fly VR",
-      description: "These are a couple of projector based fly VR systems I built. Both had tight space constraints due to the microscope used to image the fly, resulting in different layouts to fit in the available space while maintaining usabiility.",
-      images: [
-          "assets/images/small-projects/Fly VR/1.jpg",
-          "assets/images/small-projects/Fly VR/2.jpg",
-          "assets/images/small-projects/Fly VR/3.jpg"
-      ],
-      
-      slug: "Rat Equip",
-      title: "To help a lab study how rats interact with each other in a social context, I built a revolving door and a seesaw. The door needed to lock and unlock, and the seesaw needed an adjustable weight bias towards one side. Both devices were designed to be autoclaved and have not pinch points when they move.",
-      description: "",
-      images: [
-          "assets/images/small-projects/Rat Equip/1.jpg",
-          "assets/images/small-projects/Rat Equip/2.jpg",
-          "assets/images/small-projects/Rat Equip/3.jpg"
-      ],
-      
-      slug: "Flyris",
-      title: "Motorized adjustable ",
-      description: "A motorized adjustable diameter arena for fly behavior",
-      images: [
-          "assets/images/small-projects/Flyris/1.jpg"
-      ],
-  }
+    {
+        slug: "moving-hex-arena",
+        title: "Moving Hex Arena",
+        description: "A motorized hexagonal arena for behavioral studies.",
+        images: [
+            "assets/images/small-projects/Moving Hex Arena/1.png",
+            "assets/images/small-projects/Moving Hex Arena/2.png",
+            "assets/images/small-projects/Moving Hex Arena/3.png",
+            "assets/images/small-projects/Moving Hex Arena/4.png",
+            "assets/images/small-projects/Moving Hex Arena/5.png"
+        ],
+        link: null
+    },
+    {
+        slug: "well-plate-robot",
+        title: "Well Plate Robot",
+        description: "A robot for automated handling of well plates.",
+        images: [
+            "assets/images/small-projects/Well plate robot/1.png",
+            "assets/images/small-projects/Well plate robot/2.png"
+        ],
+        link: null
+    },
+    {
+        slug: "flyris",
+        title: "Flyris",
+        description: "A motorized adjustable diameter arena for fly behavior.",
+        images: [
+            "assets/images/small-projects/Flyris/1.png"
+        ],
+        link: null
+    },
+    {
+        slug: "rat-equip",
+        title: "Rat Social Interaction Equipment",
+        description: "To help a lab study how rats interact with each other in a social context, I built a revolving door and a seesaw. The door needed to lock and unlock, and the seesaw needed an adjustable weight bias towards one side. Both devices were designed to be autoclaved and have no pinch points when they move.",
+        images: [
+            "assets/images/small-projects/Rat Equip/1.png",
+            "assets/images/small-projects/Rat Equip/2.png"
+        ],
+        link: null
+    },
+    {
+        slug: "fly-vr",
+        title: "Projected Fly VR",
+        description: "These are a couple of projector based fly VR systems I built. Both had tight space constraints due to the microscope used to image the fly, resulting in different layouts to fit in the available space while maintaining usability.",
+        images: [
+            "assets/images/small-projects/Fly VR/1.png",
+            "assets/images/small-projects/Fly VR/2.png",
+            "assets/images/small-projects/Fly VR/3.png"
+        ],
+        link: null
+    }
 ];
