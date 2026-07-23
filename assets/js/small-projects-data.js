@@ -28,7 +28,7 @@ const SMALL_PROJECTS = [
     {
         slug: "moving-hex-arena",
         title: "Moving Hex Arena",
-        description: "A motorized hexagonal arena which allows for automated reconfiguration for mouse behavioral studies",
+        description: "A motorized hexagonal arena that automatically reconfigures itself for mouse behavioral studies.",
         images: [
             "assets/images/small-projects/Moving Hex Arena/1.png",
             "assets/images/small-projects/Moving Hex Arena/2.png",
@@ -41,7 +41,7 @@ const SMALL_PROJECTS = [
     {
         slug: "well-plate-robot",
         title: "Well Plate Robot",
-        description: "An automated system for cycling 56 well plates onto an imaging platform over a 24 hour period.",
+        description: "An automated system that cycles 56 well plates onto an imaging platform over a 24-hour period.",
         images: [
             "assets/images/small-projects/Well plate robot/1.png",
             "assets/images/small-projects/Well plate robot/2.png"
@@ -51,7 +51,7 @@ const SMALL_PROJECTS = [
     {
         slug: "flyris",
         title: "Flyris",
-        description: "A motorized adjustable diameter arena for fly behavior.",
+        description: "A motorized arena with an adjustable diameter, built for fly behavior studies.",
         images: [
             "assets/images/small-projects/Flyris/1.png"
         ],
@@ -60,7 +60,7 @@ const SMALL_PROJECTS = [
     {
         slug: "rat-equip",
         title: "Rat Social Interaction Equipment",
-        description: "To help a lab study how rats interact with each other in a social context, I built a revolving door and a seesaw. The door needed to lock and unlock, and the seesaw needed an adjustable weight bias towards one side. Both devices were designed to be autoclaved and have no pinch points when they move.",
+        description: "A revolving door and a seesaw built to help a lab study rat social interaction. The door needed to lock and unlock, and the seesaw needed an adjustable weight bias to one side. Both were designed to be autoclaved and have no pinch points when in motion.",
         images: [
             "assets/images/small-projects/Rat Equip/1.png",
             "assets/images/small-projects/Rat Equip/2.png"
@@ -70,7 +70,7 @@ const SMALL_PROJECTS = [
     {
         slug: "fly-vr",
         title: "Projected Fly VR",
-        description: "These are a couple of projector based fly VR systems I built. Both had tight space constraints due to the microscope used to image the fly, resulting in different layouts to fit in the available space while maintaining usability.",
+        description: "A pair of projector-based fly VR systems, each built around tight space constraints from the microscope used to image the fly, resulting in different layouts to fit the available space while maintaining usability.",
         images: [
             "assets/images/small-projects/Fly VR/1.png",
             "assets/images/small-projects/Fly VR/2.png",
