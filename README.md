@@ -1,9 +1,9 @@
 # SamJager.github.io
 
-## Adding a small project
+## Adding a project to Additional Projects
 
-The "Small Projects" section on the homepage is data-driven, so adding one
-doesn't require writing any HTML:
+The "Additional Projects" section on the homepage is data-driven, so adding
+one doesn't require writing any HTML:
 
 1. Create a folder `assets/images/small-projects/<slug>/` and drop in
    1-4 photos (jpg/png).
