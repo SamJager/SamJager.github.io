@@ -28,9 +28,7 @@ const PROJECTS = [
     {
         slug: "custom-aerobars",
         title: "Custom Aerobars Design",
-        date: "2025",
-        tags: ["CAD Design", "3D Printing", "Machining"],
-        description: "A one-piece aerobar setup designed and built from scratch: an aluminum frame with 3D printed forearm cups, custom-fitted to my riding position for a fraction of what pro-level setups cost.",
+        description: "A one-piece aerobar setup designed and built from scratch: an aluminum frame with 3D printed forearm cups, custom-fitted to my riding position.",
         images: [
             "assets/images/aerobars/bike-installed.jpg",
             "assets/images/aerobars/cad-render-1.jpg",
@@ -41,8 +39,6 @@ const PROJECTS = [
     {
         slug: "large-format-3d-printer",
         title: "High Temp Large Format 3D Printer",
-        date: "2024–Present",
-        tags: ["CAD Design", "Fabrication", "Software"],
         description: "A custom-built 3D printer with a metal motion system, triple ball screw Z axes, and 2-axis bed tilt, built for engineering-grade materials and future 5-axis printing.",
         images: [
             "assets/images/printer/FunctionalFront.jpg",
@@ -61,7 +57,9 @@ const PROJECTS = [
             "assets/images/small-projects/Moving Hex Arena/2.png",
             "assets/images/small-projects/Moving Hex Arena/3.png",
             "assets/images/small-projects/Moving Hex Arena/4.png",
-            "assets/images/small-projects/Moving Hex Arena/5.png"
+            "assets/images/small-projects/Moving Hex Arena/5.png",
+            "assets/images/small-projects/Moving Hex Arena/6.jpg",
+            "assets/images/small-projects/Moving Hex Arena/7.jpg"
         ],
         link: null
     },
@@ -71,7 +69,56 @@ const PROJECTS = [
         description: "An automated system that cycles 56 well plates onto an imaging platform over a 24-hour period.",
         images: [
             "assets/images/small-projects/Well plate robot/1.png",
-            "assets/images/small-projects/Well plate robot/2.png"
+            "assets/images/small-projects/Well plate robot/2.png",
+            "assets/images/small-projects/Well plate robot/3.jpg",
+            "assets/images/small-projects/Well plate robot/4.jpg",
+            "assets/images/small-projects/Well plate robot/5.jpg"
+        ],
+        link: null
+    },
+    {
+        slug: "fly-vr",
+        title: "Projected Fly VR",
+        description: "A pair of projector-based fly VR systems, each built around tight space constraints from the microscope used to image the fly, resulting in different layouts to fit the available space while maintaining usability.",
+        images: [
+            "assets/images/small-projects/Fly VR/1.png",
+            "assets/images/small-projects/Fly VR/2.png",
+            "assets/images/small-projects/Fly VR/3.jpg",
+            "assets/images/small-projects/Fly VR/4.png",
+            "assets/images/small-projects/Fly VR/5.jpg",
+            "assets/images/small-projects/Fly VR/6.jpg"
+        ],
+        link: null
+    },
+    {
+        slug: "Torque-joystick",
+        title: "Torque Sensing Joystick",
+        description: "Two joysticks that can be actuated with a stepper motor, control reistance with a brake, measure torque with a torque sensor, and have multiple degrees of manual adjustability.",
+        images: [
+            "assets/images/small-projects/Torque Sensing Joystick/1.jpg",
+            "assets/images/small-projects/Torque Sensing Joystick/2.jpg",
+            "assets/images/small-projects/Torque Sensing Joystick/3.jpg"
+        ],
+        link: null
+    },
+    {
+        slug: "Well-illum",
+        title: "Well Plate Illuminator",
+        description: "A simple Frame to hold Fiber optic cables, illuminating a well plate from below.",
+        images: [
+            "assets/images/small-projects/Well Plate Illuminator/1.jpg",
+            "assets/images/small-projects/Well Plate Illuminator/2.jpg"
+        ],
+        link: null
+    },
+    {
+        slug: "Small-Printer",
+        title: "Small Volume Resin Printer",
+        description: "A custom build plate and vat for a resin printer allowing printing with very small resin volumes",
+        images: [
+            "assets/images/small-projects/Small Volume Printer/1.jpg",
+            "assets/images/small-projects/Small Volume Printer/2.jpg",
+            "assets/images/small-projects/Small Volume Printer/3.jpg"
         ],
         link: null
     },
@@ -94,15 +141,4 @@ const PROJECTS = [
         ],
         link: null
     },
-    {
-        slug: "fly-vr",
-        title: "Projected Fly VR",
-        description: "A pair of projector-based fly VR systems, each built around tight space constraints from the microscope used to image the fly, resulting in different layouts to fit the available space while maintaining usability.",
-        images: [
-            "assets/images/small-projects/Fly VR/1.png",
-            "assets/images/small-projects/Fly VR/2.png",
-            "assets/images/small-projects/Fly VR/3.png"
-        ],
-        link: null
-    }
 ];
