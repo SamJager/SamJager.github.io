@@ -1,14 +1,14 @@
 # SamJager.github.io
 
-## Adding a project to Additional Projects
+## Adding a project
 
-The "Additional Projects" section on the homepage is data-driven, so adding
-one doesn't require writing any HTML:
+The "Projects" section on the homepage is data-driven, so adding one doesn't
+require writing any HTML:
 
 1. Create a folder `assets/images/small-projects/<slug>/` and drop in
    1-4 photos (jpg/png).
 2. Open `assets/js/small-projects-data.js` and add an entry to the
-   `SMALL_PROJECTS` array (newest first):
+   `PROJECTS` array (newest first):
    ```js
    {
        slug: "unique-id",
@@ -25,6 +25,6 @@ one doesn't require writing any HTML:
    ```
 3. Commit and push - the card and photo lightbox render automatically.
 
-For a bigger project that deserves its own full write-up page, copy
-`projects/project-template.html` instead and add a card for it in the
-"Featured Projects" section of `index.html`.
+For a project that deserves its own full write-up page, copy
+`projects/project-template.html` instead, then set the entry's `link` to
+point at it (e.g. `{ url: "projects/your-project.html", label: "Full Write-Up" }`).

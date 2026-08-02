@@ -1,13 +1,14 @@
 /*
- * Small Projects data
+ * Projects data
  * -----------------------------------------------------------------
- * To add a new small project:
+ * To add a new project:
  *   1. Create a folder: assets/images/small-projects/<slug>/
  *   2. Drop 1-4 images in it (jpg/png, landscape works best).
  *   3. Copy the template object below, fill it in, add it to the
- *      SMALL_PROJECTS array (newest first is a nice convention).
+ *      PROJECTS array (newest first is a nice convention).
  * That's it - no new HTML page needed. The card + photo lightbox
- * are generated automatically by small-projects.js.
+ * are generated automatically by small-projects.js. If a project has
+ * its own full write-up page, add a "link" pointing to it.
  *
  * Template:
  * {
@@ -24,7 +25,34 @@
  * }
  */
 
-const SMALL_PROJECTS = [
+const PROJECTS = [
+    {
+        slug: "custom-aerobars",
+        title: "Custom Aerobars Design",
+        date: "2025",
+        tags: ["CAD Design", "3D Printing", "Machining"],
+        description: "A one-piece aerobar setup designed and built from scratch: an aluminum frame with 3D printed forearm cups, custom-fitted to my riding position for a fraction of what pro-level setups cost.",
+        images: [
+            "assets/images/aerobars/bike-installed.jpg",
+            "assets/images/aerobars/cad-render-1.jpg",
+            "assets/images/aerobars/cad-render-2.jpg"
+        ],
+        link: { url: "projects/custom-aerobars.html", label: "Full Write-Up" }
+    },
+    {
+        slug: "large-format-3d-printer",
+        title: "High Temp Large Format 3D Printer",
+        date: "2024–Present",
+        tags: ["CAD Design", "Fabrication", "Software"],
+        description: "A custom-built 3D printer with a metal motion system, triple ball screw Z axes, and 2-axis bed tilt, built for engineering-grade materials and future 5-axis printing.",
+        images: [
+            "assets/images/printer/FunctionalFront.jpg",
+            "assets/images/printer/FunctionalTop.jpg",
+            "assets/images/printer/FrameAndMotionSystem.jpg",
+            "assets/images/printer/WithBuildPlate.jpg"
+        ],
+        link: { url: "projects/large-format-3D-printer.html", label: "Full Write-Up" }
+    },
     {
         slug: "moving-hex-arena",
         title: "Moving Hex Arena",
