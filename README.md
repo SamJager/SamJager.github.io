@@ -24,7 +24,3 @@ require writing any HTML:
    }
    ```
 3. Commit and push - the card and photo lightbox render automatically.
-
-For a project that deserves its own full write-up page, copy
-`projects/project-template.html` instead, then set the entry's `link` to
-point at it (e.g. `{ url: "projects/your-project.html", label: "Full Write-Up" }`).

@@ -7,8 +7,7 @@
  *   3. Copy the template object below, fill it in, add it to the
  *      PROJECTS array (newest first is a nice convention).
  * That's it - no new HTML page needed. The card + photo lightbox
- * are generated automatically by small-projects.js. If a project has
- * its own full write-up page, add a "link" pointing to it.
+ * are generated automatically by small-projects.js.
  *
  * Template:
  * {
@@ -37,7 +36,7 @@ const PROJECTS = [
             "assets/images/aerobars/cad-render-1.jpg",
             "assets/images/aerobars/cad-render-2.jpg"
         ],
-        link: { url: "projects/custom-aerobars.html", label: "Full Write-Up" }
+        link: null
     },
     {
         slug: "large-format-3d-printer",
@@ -51,7 +50,7 @@ const PROJECTS = [
             "assets/images/printer/FrameAndMotionSystem.jpg",
             "assets/images/printer/WithBuildPlate.jpg"
         ],
-        link: { url: "projects/large-format-3D-printer.html", label: "Full Write-Up" }
+        link: null
     },
     {
         slug: "moving-hex-arena",
