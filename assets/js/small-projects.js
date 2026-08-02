@@ -1,5 +1,5 @@
 /*
- * Renders SMALL_PROJECTS (see small-projects-data.js) into cards and
+ * Renders PROJECTS (see small-projects-data.js) into cards and
  * wires up a simple lightbox for browsing each project's photos.
  */
 
@@ -8,7 +8,7 @@
     const emptyState = document.getElementById('small-projects-empty');
     if (!grid) return;
 
-    const projects = typeof SMALL_PROJECTS !== 'undefined' ? SMALL_PROJECTS : [];
+    const projects = typeof PROJECTS !== 'undefined' ? PROJECTS : [];
 
     if (projects.length === 0) {
         if (emptyState) emptyState.style.display = 'block';
@@ -134,8 +134,10 @@
         if (project.link && project.link.url) {
             const link = document.createElement('a');
             link.href = project.link.url;
-            link.target = '_blank';
-            link.rel = 'noopener';
+            if (/^https?:\/\//.test(project.link.url)) {
+                link.target = '_blank';
+                link.rel = 'noopener';
+            }
             link.className = 'project-link';
             link.textContent = (project.link.label || 'View') + ' →';
             info.appendChild(link);
